@@ -27,14 +27,30 @@
     margin-left: 80px;
     
 }
-.con-3{
+
+
+
+.con-3 {
     position: relative;
 }
-.con-3-1{
-   position: absolute;
-   top: 300px;
-   left: 300px;
+
+.con-3-1 {
+    position: absolute;
+    top: 230px;
+
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    width: 80%;
+    max-width: 900px;
+
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
 }
+
+
 .para-1{
     color: #666666;
 }
@@ -69,6 +85,109 @@
     width: 130px;
     border-radius: 0;
 }
+.sec-1{
+    margin-top: 100px;
+}
+.custom-card {
+    border: none;
+    
+    border-radius: 10px;
+}
+
+.custom-img {
+    height: 200px;
+    width: 100%;
+    object-fit:contain;
+    border-radius: 10px ;
+}
+
+.read-link {
+    color: #6f42c1;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.read-link:hover {
+    text-decoration: underline;
+}
+.btn-5{
+    background-color: #6f42c1;
+    color: #FFFFFF;
+}
+
+.newsletter-section {
+    background: #8b44e2;
+    color: white;
+    padding: 80px 20px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newsletter-title {
+    font-size: 2rem;
+}
+
+.newsletter-form .email-input {
+    max-width: 300px;
+    margin-right: 10px;
+}
+
+.get-started-btn {
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: white;
+}
+
+.newsletter-note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+.footer-section {
+    background: white;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 600;
+}
+
+
+
+
+.footer-divider {
+    border: 1px solid #6f42c1;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.footer-copy {
+    font-size: 17px 
+   
+}
+.footer-logo img{
+   width: 80px;  
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -106,6 +225,13 @@
     flex-direction: column-reverse;
   }
 
+   .con-3-1 {
+        position: static;
+        margin-top: 20px;
+        max-width: 100%;
+        height: 100%;
+    }
+
   
 }   
 
@@ -122,5 +248,15 @@
     .img-2{
         width: 80%;
         
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+    .newsletter-form .email-input {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
